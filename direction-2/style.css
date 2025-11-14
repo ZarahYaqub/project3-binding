@@ -1,60 +1,101 @@
-
 :root {
-    background-color: #F9F2EC;
-    spacing: 1rem;
-font-size: 110%;
-scroll-behavior: smooth;
+    /* global color attributes (makes it easier to change colors/test colors (https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:root#declaring_global_css_variables (shout-out Evgenii got it from your file */
+    --bg-primary: #faf5f1;
+    --bg-secondary: #fffcea;
+    --bg-section: #234aac;
+    --accent: #edc0f2;
+    --spacing: 1rem;
+    
+    background-color: var(--bg-primary);
+    font-size: 110%;
+    scroll-behavior: smooth;
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
 }
 
-body{
-    font-family: "spline sans";
-    header{ 
-        margin-left: -1rem;
-        margin-right: -1rem;
-        background-color: #6002ee;
-        padding: 1rem;
+body {
+    font-family: "Cabin", sans-serif;
+    background-color: var(--bg-secondary);
+    margin: 0;
+    padding: 0;
+}
 
-    }
-    h1 {
-       
-        padding:2rem;
-        text-wrap: pretty !important;
-        font-family:"EB Garamond";
-        font-size: 4rem;
-        line-height: 4rem;
-    }
+.nav {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    gap: var(--spacing);
+    padding: var(--spacing);
+    text-align: center;
+}
 
-    .subheadline {
-        display: flex;
-        justify-content: space-between;  /* pushes items to opposite ends */
-        align-items: baseline;           /* keeps text aligned nicely */
-    }
-
-    h3{
-        border-style: dotted;
-        border-width: 4px;
-        border-color: #d602ee;
-        padding: 1rem;
-        margin-top: 3rem;
-        margin-bottom:2rem;
-     }
-    }
+header { 
+    margin-left:  -1rem;
+    margin-right: -1rem;
+    padding: var(--spacing);
+    border-radius: 1rem;
     
-    .nav{
-        font-family:"EB Garamond";
-        font size: 2rem;
-        text-align: center;
-        padding: 1rem;
-        }
+    hgroup{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.25rem;
+        margin-bottom: var(--spacing);
+    }
+}
 
-.quote { 
-    font-size: 1rem;
-    line-height: 1.6rem;
-    padding-left: 0.8rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.4rem;
-    border-left: 4px dotted #d602ee;
-    margin-left: 1rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+h1 {
+    padding: .5rem;
+    text-wrap: pretty;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bolder;
+    font-size: 4rem;
+    line-height: 4rem;
+    margin: 0;
+}
+
+.hgroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--spacing);
+}
+
+section {
+    margin-top: 2px;
+    padding: var(--spacing) var(--spacing) 1.5rem var(--spacing);
+    background-color: var(--bg-section);
+    color: white;
+    border-radius: 1.5rem;
+}
+
+h3 {
+    text-wrap: pretty; !important
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    padding: var(--spacing);
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 0.75rem;
+}
+
+.quote {
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
+    border-left: 6px solid #f7b3fe;
+    background-color: var(--accent);
+    margin: 2rem 0;
+    border-radius: 0 1rem 1rem 0;
+    blockquote {
+    font-family: "Cabin", serif;
+    font-size: 1.25rem;
+    font-style: italic;
+    line-height: 1.8rem;
+}
+}
+
+.quote p {
+    margin: 0.5rem 0;
 }
