@@ -1,9 +1,5 @@
 :root {
     background-color:white; 
-    a {
-        text-decoration:underline;
-        text-underline-offset: .25rem;  
-    }
 }
 .nav {
     display: flex;
@@ -51,11 +47,6 @@ section{
         color: white;
         padding: 1rem;
         font-weight: bold;
-}
-
-
-    em{
-        font-style: italic;
 }
 
 .quote {

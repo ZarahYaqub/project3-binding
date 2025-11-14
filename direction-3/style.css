@@ -1,0 +1,55 @@
+:root {
+    font-family:"PT Sans";
+    background-color: #F9F2EC;
+    spacing: 1rem;
+    font-size: 10%;
+    line-height:50%;
+    scroll-behavior: smooth;
+    line-color: #000000; 
+    line-thickness: 1px;
+    line-style: solid;
+}
+
+.nav {
+    text-align: center;
+    padding:1rem;
+    .li {}
+
+}
+h1 {
+    font-family:"Fjalla One";
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+section {
+    margin:-1rem:-1rem:-1rem:-1rem;
+    padding left: 1rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    h3 {
+        background-color: black;
+        color: white;
+        padding: 2rem;
+        margin-bottom: 1rem;
+    }
+    p{
+        margin-left: 1rem;
+    }
+}
+
+.quote {
+    padding-left: 2rem;
+    blockquote {
+    padding-top: ;
+    padding-bottom: 1.5rem;
+    font-family:"Fjalla One";
+    font-size: 1.5rem;
+}
+    padding left: 2rem;
+    padding-bottom: 1rem;
+    border:1px solid #000;
+}

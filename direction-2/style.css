@@ -1,6 +1,6 @@
 
 :root {
-    background-color: #ffffff;
+    background-color: #F9F2EC;
     spacing: 1rem;
 font-size: 110%;
 scroll-behavior: smooth;
@@ -12,6 +12,7 @@ body{
         margin-left: -1rem;
         margin-right: -1rem;
         background-color: #6002ee;
+        padding: 1rem;
 
     }
     h1 {
@@ -22,19 +23,38 @@ body{
         font-size: 4rem;
         line-height: 4rem;
     }
-    nav {
 
+    .subheadline {
+        display: flex;
+        justify-content: space-between;  /* pushes items to opposite ends */
+        align-items: baseline;           /* keeps text aligned nicely */
     }
-}
+
+    h3{
+        border-style: dotted;
+        border-width: 4px;
+        border-color: #d602ee;
+        padding: 1rem;
+        margin-top: 3rem;
+        margin-bottom:2rem;
+     }
+    }
+    
+    .nav{
+        font-family:"EB Garamond";
+        font size: 2rem;
+        text-align: center;
+        padding: 1rem;
+        }
+
 .quote { 
     font-size: 1rem;
     line-height: 1.6rem;
     padding-left: 0.8rem;
     padding-top: 0.5rem;
     padding-bottom: 0.4rem;
-    border-left: 4px solid #3F75F2;
+    border-left: 4px dotted #d602ee;
     margin-left: 1rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-
 }
