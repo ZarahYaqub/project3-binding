@@ -1,0 +1,40 @@
+
+:root {
+    background-color: #ffffff;
+    spacing: 1rem;
+font-size: 110%;
+scroll-behavior: smooth;
+}
+
+body{
+    font-family: "spline sans";
+    header{ 
+        margin-left: -1rem;
+        margin-right: -1rem;
+        background-color: #6002ee;
+
+    }
+    h1 {
+       
+        padding:2rem;
+        text-wrap: pretty !important;
+        font-family:"EB Garamond";
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    nav {
+
+    }
+}
+.quote { 
+    font-size: 1rem;
+    line-height: 1.6rem;
+    padding-left: 0.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.4rem;
+    border-left: 4px solid #3F75F2;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+}

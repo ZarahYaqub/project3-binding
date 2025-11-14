@@ -1,22 +1,14 @@
 :root {
         background-color: #ffffff;
         spacing: 1rem;
-	font-size: 125%;
+	font-size: 110%;
     scroll-behavior: smooth;
     }
     
     body {
         font-family: 'helvetica', sans-serif;
-        font-size: 1.5rem;
+        font-size: 1rem;
         line-height: 1.6;
-        padding: 2rem;
-        text-align: center;
-
-
-        footer {
-            font-size: 1rem;
-            position: fixed;
-            bottom: 2rem;
-            text-align: center;
-        }
+        padding: 1rem;
+        text-align: left;
     }
