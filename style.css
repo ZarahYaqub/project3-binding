@@ -1,0 +1,87 @@
+:root {
+    background-color: black;
+    color: whitesmoke; 
+}
+
+body{
+    background-color: black;
+    color: whitesmoke;
+}
+.nav {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    gap: 1rem;
+}
+
+section {
+    margin-top: 4rem;
+}
+
+p {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    text-wrap: pretty;
+}
+
+h1 {
+    font-family: "Stack Sans Text", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    line-height: 3rem;
+}
+
+.spread {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3.5rem;
+    width: 100%;
+    padding-top: 3rem;
+}
+
+.subhead {
+    font-size: 1.3rem;
+    justify-content: center;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+}
+
+h3 {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    background-color: #1a1a1a; 
+    color: whitesmoke; 
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.quote {
+    font-size: 1rem;
+}
+
+.quote blockquote {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+footer {
+    padding: 2rem;
+    background-color: #1a1a1a; 
+    color: whitesmoke; 
+    font-size: 1rem;
+    bottom: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-bottom: -1rem;
+}
+
+a {
+    color: #66b3ff; 
+}
+
+a:hover {
+    color: #99ccff;
+}
