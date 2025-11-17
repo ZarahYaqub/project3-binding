@@ -1,6 +1,6 @@
 :root {
-    background-color: black;
-    color: whitesmoke; 
+    background-color: black;                    /* change so its not so dark */
+    color: whitesmoke;                           /* Review contrast */
     spacing: 1rem;
 	font-size: 110%;
     scroll-behavior: smooth;
