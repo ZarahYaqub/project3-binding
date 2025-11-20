@@ -1,4 +1,5 @@
 :root {
+    /* Colors */
     --black: #333333;
     --white: #FAF7F4;
     --dark-gray: #545454;
@@ -7,6 +8,7 @@
     --yellow: #ffe4af;
     --pink: #ffc9ff;
 
+    /* Type scale */
     --display: 2.5rem;
     --headline: 1.8rem;
     --title: 1.25rem;
@@ -16,50 +18,69 @@
 
     background-color: var(--black);
     color: var(--white);
-    spacing: 1rem;
+
     font-size: 95%;
     scroll-behavior: smooth;
     text-wrap: pretty;
 }
 
+/* -------------------------------------------------- Fonts */
 @font-face {
-    font-family: "Cabin";
-    src: url("Fonts/Cabin/Cabin-Regular.ttf") format("truetype");
-    }
-
- @font-face {
     font-family: "Krub";
     src: url("Fonts/Krub/Krub-Regular.ttf") format("truetype");
-    }
+}
 
 @font-face {
     font-family: "Roboto-Condensed";
     src: url("Fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf") format("truetype");
-    }
+}
 
-    section {
-        margin-top: 4rem;
-    }
+/* -------------------------------------------------- Base */
 
 body {
-    font-family: "Cabin", sans-serif;
+    font-family: 'helvetica', sans-serif;
     font-size: var(--body);
-    padding-left: 1rem;
-    padding-top: 1rem;
+    line-height: 1.6;
+    padding: 1rem;
+    text-align: left; 
+}
+
+/* Avoid repeating italic */
+em {
+    font-style: italic;
+}
+
+/* Links (merged) */
+a {
+    color: #66b3ff;
+    text-decoration: underline;
+    text-underline-offset: .25rem;  
+}
+
+a:hover {
+    color: #99ccff;
+}
+
+/* Sections */
+section {
+    margin-top: 4rem;
+}
+
+/* --------------------------------------------------  Headings */
+
+h1, h2 {
+    font-family: "Roboto-Condensed", sans-serif;
+    font-size: var(--title);
+    font-weight: bold;
 }
 
 h1 {
-    font-family: "Roboto-Condensed", sans-serif;
-    font-size: var(--title);
+    font-weight: bolder;
 }
 
-h2 {
-    font-family: "Roboto-Condensed", sans-serif;
-    font-size: var(--title);
-}
-
+/* H3 Style */
 h3 {
-    font-family: "Cabin", sans-serif;
+    font-family: 'helvetica', sans-serif;
     font-size: var(--title);
     margin-left: -1rem;
     margin-right: -1rem;
@@ -69,8 +90,10 @@ h3 {
     font-weight: bold;
 }
 
+/* -------------------------------------------------- Quotes */
+
 .quote {
-    font-size: 1rem;
+    font-size: var(--body);
 }
 
 .quote blockquote {
@@ -78,7 +101,10 @@ h3 {
     font-size: var(--quote);
     line-height: 2rem;
 }
-/*                                                                                  PROGRESS BAR */
+
+/* -------------------------------------------------- */
+/* Progress bar */
+
 .reading-progress-bar-container { 
     position: fixed;
     top: 0;
@@ -97,26 +123,87 @@ h3 {
 }
 
 @keyframes width {
-    from {width: 0%;}
-    to   {width: 100%;}
+    from { width: 0%; }
+    to   { width: 100%; }
 }
 
-/*                                                                                  NAVIGATION */
- nav {
+/* -------------------------------------------------- */
+/* Navigation */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+nav li {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* -------------------------------------------------- Footer */
+
+footer {
+    font-family: "helvetica", sans-serif;
+    font-size: var(--footnote);
+    padding: .5rem;
+    text-align: center;
+    background-color: var(--footnote);
+}
+
+/* -------------------------------------------------- Image */
+.layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* media (gif) full width on mobile */
+.media {
+    width: 100%;
+}
+
+.media img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ---------------------------------------------- MEDIA QUIRIES */
+
+@media (width > 750px) {
+
+    .layout {
+        display: flex;
+        flex-direction: row;
+        height: 100dvh;
+        overflow: hidden;
+    }
+
+    .main-column {
+        flex: 1;                 /* left side */
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: stretch;
-        height: auto; 
-
-    .li {
-            background-color: var(--white);
-            color: var(--black);
-        }
+        overflow-y: auto;        /* smooth scrolling column */
+        scroll-behavior: smooth;
+        padding-right: 2rem;
     }
 
-/*                                                                                     FOOTER */
-    footer {
-        font-family: "Cabin", sans-serif;
-        font-size: var(--footnote);
+    .media {
+        flex: 1;                 /* right side */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
     }
+
+    .media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;       /* fills right half beautifully */
+    }
+
+    #footer {
+        margin-top: auto;        /* footer stays at bottom */
+    }
+}
