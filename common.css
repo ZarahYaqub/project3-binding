@@ -102,8 +102,7 @@ h3 {
     line-height: 2rem;
 }
 
-/* -------------------------------------------------- */
-/* Progress bar */
+/* -------------------------------------------------- Progress bar */
 
 .reading-progress-bar-container { 
     position: fixed;
@@ -125,20 +124,6 @@ h3 {
 @keyframes width {
     from { width: 0%; }
     to   { width: 100%; }
-}
-
-/* -------------------------------------------------- */
-/* Navigation */
-
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-}
-
-nav li {
-    background-color: var(--white);
-    color: var(--black);
 }
 
 /* -------------------------------------------------- Footer */
@@ -181,16 +166,16 @@ footer {
     }
 
     .main-column {
-        flex: 1;                 /* left side */
+        flex: 1;
         display: flex;
         flex-direction: column;
-        overflow-y: auto;        /* smooth scrolling column */
+        overflow-y: auto;
         scroll-behavior: smooth;
         padding-right: 2rem;
     }
 
     .media {
-        flex: 1;                 /* right side */
+        flex: 1;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -200,10 +185,10 @@ footer {
     .media img {
         width: 100%;
         height: 100%;
-        object-fit: cover;       /* fills right half beautifully */
+        object-fit: cover;
     }
 
     #footer {
-        margin-top: auto;        /* footer stays at bottom */
+        margin-top: auto;
     }
 }

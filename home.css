@@ -1,3 +1,11 @@
+/* TASKS
+[] fix boxes for nav 
+[] padding
+[] write colophon
+[] write intro 
+[] style footer  
+ */
+
 .main-nav {
     list-style: none;
     padding: 0;
@@ -10,24 +18,21 @@
   .main-nav li {
     width: 100%;
   }
-  
-  /* Make all cards fill the available space */
+
   .card {
     display: flex;
     flex-direction: column;
-    height: 100%;          /* NEW: stretch to full grid cell height */
+    height: 100%;
     text-decoration: none;
     color: black;
   
-    background: white;
     border-radius: 2rem;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   }
   
   .card-content {
     padding: 2rem;
-    flex-grow: 1;          /* NEW: pushes footer to bottom so heights match */
+    flex-grow: 1;
   }
   
   /* CARD COLORS USING nth-child */
@@ -44,7 +49,7 @@
 }
 
   .card-footer {
-    background: #d9d9d9;
+    background: var(--white);
     padding: 1.5rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -58,18 +63,15 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
   
-      align-items: stretch;   /* ensure all items in row match height */
-    }
+      align-items: stretch; 
   }
   
-  /* Desktop (optional if you want 3 per row) */
   @media (min-width: 900px) {
     .main-nav {
       grid-template-columns: repeat(3, 1fr);
     }
   }
   
-
 @media (min-width: 900px) {
   .main-nav {
     grid-template-columns: repeat(3, 1fr);
