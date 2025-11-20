@@ -4,20 +4,89 @@
 		<title>binding</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/> 
 		<!-- META TAG https://typography-interaction-2526.github.io/topic/responsive/#viewport-meta-tag -->
-		<link href="reset.css" rel="stylesheet">
-		<!-- RESET https://typography-interaction-2526.github.io/topic/css/#resets -->
-		<link href="style.css" rel="stylesheet">
-		<link href="common.css" rel="stylesheet">
-		</head>
+		<style>
+            @import 'reset.css' layer(reset);
+            @import 'common.css' layer(common);
+            @import 'home.css' layer(page);
+        </style>
+	</head>
 	<body>
-		<h1>Binding</h1>
-	<nav>
-		<ol class="main-nav">
-			<li id="one"><a href="direction-1/index.html">Direction 1</a></li>
-			<li id="two"><a href="direction-2/index.html">Direction 2</a></li>
-			<li id="three"><a href="direction-3/index.html">Direction 3</a></li>
-		</ol>
-	</nav>
+		<div class="reading-progress-bar-container">
+			<div class="reading-progress-bar"></div>
+		</div>
+		
+		<h1>Building for Everyone</h1>
+
+		<section>
+			<h2>
+				Introduction
+			</h2>
+			<p>
+				text
+			</p>
+		</section>
+
+		<nav class="navbar">
+			<ol class="main-nav">
+			<li>
+				<a href="1-mismatch/" class="card">
+				<div class="card-content">
+					<span class="nav-title">Mismatch: How Inclusion Shapes Design</span>
+					<span class="nav-author">By Kat Holmes</span>
+					<span class="nav-description">
+					Exploring inclusive design principles and accessibility
+					</span>
+				</div>
+				<div class="card-footer">
+					<span>Read More</span>
+					<span class="arrow">→</span>
+				  </div>
+				</a>
+			</li>
+			<li>
+				<a href="2-neutral-graphic-design/" class="card">
+				<div class="card-content">
+					<span class="nav-title"><h1>There Is No Such Thing As Neutral Graphic Design</h1></span>
+					<span class="nav-author"><h2>By Ellen Lupton and Leslie Xia</h2></span>
+					<span class="nav-description">
+					Design is normative but it can also be transformative
+					</span>
+				</div>
+		  
+				<div class="card-footer">
+					<span>Read More</span>
+					<span class="arrow">→</span>
+				</div>
+				</a>
+			</li>
+			<li>
+				<a href="3-user-friendly-horrors/" class="card">
+				<div class="card-content">
+					<span class="nav-title"> <h1>I wrote the book on user-friendly design. What I see today horrifies me</h1></span>
+					<span class="nav-author"><p>By Don Norman</p></span>
+					<span class="nav-description">
+						<p>The world is designed against the elderly, writes Don Norman, 83-year-old author of the industry bible Design of Everyday Things and a former Apple VP.</p>
+					</span>
+				  </div>
+		  
+				  <div class="card-footer">
+					<span>Read More</span>
+					<span class="arrow">→</span>
+				</div>
+				</a>
+			  </li>
+			</ol>
+		  </nav>
+<!-- 																								COLOPHON -->
+		<section>
+			<h2>
+				Colophon
+			</h2>
+			<p>
+				text
+			</p>
+		</section>
+
 		<footer>
 			<p>Created by Zarah Yaqub for Typography & Interaction Design, Fall 2024</p>
 		</footer>

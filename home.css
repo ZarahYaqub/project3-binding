@@ -1,0 +1,77 @@
+.main-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .main-nav li {
+    width: 100%;
+  }
+  
+  /* Make all cards fill the available space */
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;          /* NEW: stretch to full grid cell height */
+    text-decoration: none;
+    color: black;
+  
+    background: white;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .card-content {
+    padding: 2rem;
+    flex-grow: 1;          /* NEW: pushes footer to bottom so heights match */
+  }
+  
+  /* CARD COLORS USING nth-child */
+.main-nav li:nth-child(1) .card-content {
+  background-color: #9DD4E3;
+}
+
+.main-nav li:nth-child(2) .card-content {
+  background-color: #FFE4AF
+}
+
+.main-nav li:nth-child(3) .card-content {
+  background-color: #FFD5FF;
+}
+
+  .card-footer {
+    background: #d9d9d9;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Tablet */
+  @media (min-width: 600px) {
+    .main-nav {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+  
+      align-items: stretch;   /* ensure all items in row match height */
+    }
+  }
+  
+  /* Desktop (optional if you want 3 per row) */
+  @media (min-width: 900px) {
+    .main-nav {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+
+@media (min-width: 900px) {
+  .main-nav {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
