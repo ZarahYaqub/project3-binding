@@ -254,7 +254,7 @@ section:first-of-type {
 	padding: var(--space-4);
 	text-align: center;
 	background-color: var(--black);
-	color: var(--blue)
+	color: var()
 	border-radius: var(--border-radius);
 	z-index: 100;
 }
