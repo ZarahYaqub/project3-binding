@@ -11,8 +11,21 @@ This website was created as part of Project 3 for Type & Interaction
 
 
 ## Learnings
-- 
+- <section aria-labelledby="">
+- <figure>
+- </figcaption>
+
   
 ## Typography Licence
+
+## Special Thanks
+to everyone who helped me. 
+UC Tutors: 
+- Hoseok Choi
+- Viyan Poonamallee
+- Johnny Wang
+
+CD Tutors: 
+- Ketana Anekar
 
 

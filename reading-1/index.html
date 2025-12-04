@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html> 
-<head> 
-	<title>binding</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+<html lang="en">
+
+<head>
+	<title>Binding - Mismatch</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<style>
 		@import '../reset.css' layer(reset);
 		@import '../common.css' layer(common);
 		@import 'style.css' layer(page);
 	</style>
-
-	<!-- FONTS -->
 	<link rel="stylesheet" href="https://use.typekit.net/fdv3nhh.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,103 +17,116 @@
 </head>
 
 <body>
-	<!-- READING PROGRESS BAR  -->
-	<div class="reading-progress-bar-container">
-		<div class="reading-progress-bar"></div>
-	</div>
+	<nav aria-label="Main Navigation">
+		<ul>
+			<li><a href="../reading-1/">Mismatch</a></li>
+			<li><a href="../reading-2/">Neutral</a></li>
+			<li><a href="../reading-3/">Horrors</a></li>
+		</ul>
+	</nav>
+	<main>
+		<img src="./media/binding-image.png"
+			alt="Four illustrated hands in pink, yellow, blue, and purple stretch a red string between them, creating a heart shape in the center"
+			aria-hidden="true">
 
-<div class="layout">
+		<header>
+			<p><time datetime="2018-09-21">September 21, 2018</time></p>
+			<h1>Mismatch: How <em class="light-text">Inclusion</em> Shapes Design</h1>
+			<p class="author">By Kat Holmes</p>
+		</header>
 
-	<div class="main-column">
-		<nav id="nav">
-			<ol class="main-nav">
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="../reading-1/">Mismatch</a></li>
-				<li><a href="../reading-2/">Neutral</a></li>
-				<li><a href="../reading-3/">Horrors</a></li>
+		<nav aria-labelledby="toc-heading" class="toc-container">
+			<h2 id="toc-heading" class="toc-title">ON THIS PAGE</h2>
+
+			<ol class="toc-list">
+				<li><a href="#introduction">Introduction</a></li>
+				<li><a href="#exclusion-1">Why Did You Build A Wall Of Exclusion?</a></li>
+				<li><a href="#exclusion-2">What happens when designers make assumptions?</a></li>
+				<li><a href="#exclusion-3">How does a designer make something inclusive?</a></li>
+				<li><a href="#exclusion-4">What’s the role of gaming in your life?</a></li>
+				<li><a href="#exclusion-5">How is gaming shifting from exclusion to inclusion?</a></li>
 			</ol>
 		</nav>
 
-
-		<main class="content">
-
-			<!-- PAGE HEADER -->
-			<header>
-				<h1 class="spread"><span>Mis</span><span>match</span></h1>
-				<h1 class="subhead">How Inclusion Shapes Design</h1>
-				<h2>By Kat Holmes</h2>
-				<time>2019</time>
-			</header>
-			<section>
-				<p>
-					<a href="https://www.jrp3.com/index.php">John R. Porter</a>’s bedroom would make any die-hard gamer feel right at home. Among the personal computers, beyond the Run Lola Run movie poster, across from a MakerBot busily extruding plastic threads into an unidentifiable widget, is a large black pegboard. The kind of board my grandfather used for hanging hammers and wrenches in his garage. Mounted on the pegboard, like hunting trophies, are dozens of video game controllers dating back decades. Among them is the 1977 nostalgia-inducing <a href="https://en.wikipedia.org/wiki/Atari_CX40_joystick"> Atari Video Computer System controller</a>, with its joystick and single red button. Hundreds of millions of people used this kind of controller to play the legendary game <a href="https://en.wikipedia.org/wiki/Pong">Pong</a>. Next in line is the 1985 iconic block-shaped <a href="https://nintendo.fandom.com/wiki/Nintendo_Entertainment_System_controller">Nintendo Entertainment System controller</a> controller with two buttons and a T-shaped directional pad that players used to maneuver through Super Mario Bros., one of the most popular video games of all time. Symbiotically, video games and their controllers grew more complex in the 1990s as home video games grew in popularity. Porter’s pegboard features the contoured dual grips of the <a href="https://en.wikipedia.org/wiki/PlayStation_controller#:~:text=The%20PlayStation%20controller%20is%20the,PlayStation%20on%203%20December%201994.">1994 Sony PlayStation gamepad</a> and a few hefty <a href="https://en.wikipedia.org/wiki/Xbox_controller">Microsoft Xbox controllers</a> released since 2001, adorned with buttons, sticks, triggers, and a directional pad. Porter ties his experience with gaming to everyday life, making insightful connections between play and inclusion. Here are some excerpts from a conversation with Porter to guide our exploration of the second element in the cycle of exclusion: <em>Who makes it?</em>
-				</p>
+		<section id="introduction" aria-label="Introduction">
+			<a href="https://www.jrp3.com/index.php">John R. Porter</a>’s bedroom would make any die-hard gamer feel right at home. Among the personal computers, beyond the Run Lola Run movie poster, across from a MakerBot busily extruding plastic threads into an unidentifiable widget, is a large black pegboard. The kind of board my grandfather used for hanging hammers and wrenches in his garage. Mounted on the pegboard, like hunting trophies, are dozens of video game controllers dating back decades. Among them is the 1977 nostalgia-inducing <a href="https://en.wikipedia.org/wiki/Atari_CX40_joystick"> Atari Video Computer System controller</a>, with its joystick and single red button. Hundreds of millions of people used this kind of controller to play the legendary game <a	href="https://en.wikipedia.org/wiki/Pong">Pong</a>. Next in line is the 1985 iconic block-shaped <a href="https://nintendo.fandom.com/wiki/Nintendo_Entertainment_System_controller">Nintendo Entertainment System controller</a> controller with two buttons and a T-shaped directional pad thatplayers used to maneuver through Super Mario Bros., one of the most popular video games of all time.Symbiotically, video games and their controllers grew more complex in the 1990s as home video games grew inpopularity. Porter’s pegboard features the contoured dual grips of the <a href="https://en.wikipedia.org/wiki/PlayStation_controller#:~:text=The%20PlayStation%20controller%20is%20the,PlayStation%20on%203%20December%201994.">1994 Sony PlayStation gamepad</a> and a few hefty <a href="https://en.wikipedia.org/wiki/Xbox_controller">Microsoft Xbox controllers</a> released since 2001, adorned with buttons, sticks, triggers, and a directional pad. Porter ties his experience with gaming to everyday life, making insightful connections between play and inclusion. Here are some excerpts from a conversation with Porter to guide our exploration of the second element in the cycle of exclusion: <em class="italics">Who makes it?</em>
 		</section>
 
-		<section>
-				<h3>Why did you build a Wall of Exclusion?</h3>
-				<p>
-					I keep these here to remind me of all the assumptions that we, as designers, make about people. The design of these products clearly signals that gaming is for some people, and not for others. A game controller says, <em class="italics">“This is for you”</em> or <em class="italics">“This is not for you.”</em> This is true for everything we design. We make assumptions about who our users are, and we design for those assumptions. And if you don't fit those assumptions, then you are excluded.
-				</p>
-			</section>
-		
+		<section aria-labelledby="exclusion-1-title">
+			<h2 id="exclusion-1-title">Why did you build a Wall of Exclusion?</h2>
+			<span id="exclusion-1"></span>
+
+			<p>
+				I keep these here to remind me of all the assumptions that we, as designers, make about people. The design of these products clearly signals that gaming is for some people, and not for others. A game controller says, <em class="italics">“This is for you”</em> or <em class="italics">“This is not for you.”</em> This is true for everything we design. We make assumptions about who our users are,and we design for those assumptions. And if you don't fit those assumptions, then you are excluded.
+			</p>
+		</section>
+
+		<figure class="quote">
+			<blockquote cite="https://www.amazon.com/dp/0262539489/">
+				<p>“We make assumptions about who our users are, and we design for those assumptions.”</p>
 			</blockquote>
-			<div class="quote">
-				<blockquote cite="https://www.amazon.com/dp/0262539489/">
-				<p>
-					“We make assumptions about who our users are, and we design for those assumptions.”
-				</p>
-				</blockquote>
-				<p>- John R. Porter, <cite>Mismatch: How Inclusion Shapes Design</cite></p>
-			</div>
-		
-		<section>
-				<h3>What happens when designers make assumptions about people?</h3>
-				<p>
-					All of these games are based on a broad assumption that you’ll be using your fingers and your hands to interact. And for me, that is almost entirely moot. I have some physical mobility that I can use to move my wheelchair, but everything I do in the digital realm is mediated through other avenues of interaction, primarily speech. Whenever I’m using technology, I use speech to control it, even though it was never designed to work with speech. It’s not just that a game isn’t optimized for my abilities. It was made without ever even considering the possibility that someone would need to interact with it in the ways that I do. That places the onus on me to figure out all these workarounds. For gamers with disabilities, we have to spend as much time figuring out how to play a game as we do actually playing.
-				</p>
+			<figcaption class="quote-source">
+				— John R. Porter, <cite>Mismatch: How Inclusion Shapes Design</cite>
+			</figcaption>
+		</figure>
+
+		<section aria-labelledby="exclusion-2-title">
+			<span id="exclusion-2"></span>
+			<h2 id="exclusion-2-title">What happens when designers make assumptions about people?</h2>
+			<p>
+				All of these games are based on a broad assumption that you’ll be using your fingers and your hands to interact. And for me, that is almost entirely moot. I have some physical mobility that I can use to move my wheelchair, but everything I do in the digital realm is mediated through other avenues of interaction, primarily speech. Whenever I’m using technology, I use speech to control it, even though it was never designed to work with speech. It’s not just that a game isn’t optimized for my abilities. It was made without ever even considering the possibility that someone would need to interact with it in the ways that I do. That places the onus on me to figure out all these workarounds. For gamers with disabilities, we have to spend as much time figuring out how to play a game as we do actually playing.
+			</p>
 		</section>
 
-		<section>
-				<h3>How does a designer make something inclusive?</h3>
-				<p>
-					Games that only allow a user to play in one way, that have a very prescriptive notion of who a player is, those tend to be the ones that are the least accessible. But games that allow more freedom and flexibility tend to be a lot more inclusive. I often like to point out World of Warcraft as one of the really great inclusive games. There are players who don’t have the motor ability to interact fast enough to engage in combat. But I know people with disabilities who have played this game for years. They have all of their crafting skills maxed out because, for them, the game isn’t about doing quests. The game is economics. The game is building a leather-working empire and making gear that people can buy from them. And I don’t know if anyone at Blizzard Entertainment would say that they envisioned that as a viable play style. Nevertheless, they built an inclusive system.
-				</p>
+		<section aria-labelledby="exclusion-3-title">
+			<span id="exclusion-3"></span>
+			<h2 id="exclusion-3-title">How does a designer make something inclusive?</h2>
+			<p>
+				Games that only allow a user to play in one way, that have a very prescriptive notion of who a player is, those tend to be the ones that are the least accessible. But games that allow more freedom and flexibility tend to be a lot more inclusive. I often like to point out World of Warcraft as one of the really great inclusive games. There are players who don’t have the motor ability to interact fast enough to engage in combat. But I know people with disabilities who have played this game for years. They have all of their crafting skills maxed out because, for them, the game isn’t about doing quests. The game is economics. The game is building a leather-working empire and making gear that people can buy from them. And I don’t know if anyone at Blizzard Entertainment would say that they envisioned that as a viable play style. Nevertheless, they built an inclusive system.
+			</p>
 		</section>
-		
-		<section>
-				<h3>What’s the role of gaming in your life?</h3>
-				<p>
-					I still remember the day that my uncle Mike came over to give me Final Fantasy VII as a 12th birthday present. It was my favorite game, even though I’d never played it. I’d watched him play it, but was never able to join in. I was able to play games until I lost the ability to use game controllers around the age of 10. For me, gaming was becoming a spectator sport. My uncle once spent an entire afternoon trying to tape little pieces of wood onto his controller to make it work for me. When the efforts were unsuccessful, I told him not to worry about it. Final Fantasy just wasn’t for me. <em class="italics">“Sure it is,”</em> he reassured me as he picked up the modified controller, <em class="italics">““we just need to stop this thing from getting in the way.”</em> I don’t just play. I work to figure out how to play. It’s figuring out how to participate in societal moments. Which is a burden sometimes. I think of it as a metagame that I play in all areas of my life. It’s a puzzle to be solved and shared.
-				</p>
+
+		<section aria-labelledby="exclusion-4-title">
+			<span id="exclusion-4"></span>
+			<h2 id="exclusion-4-title">What’s the role of gaming in your life?</h2>
+			<p>
+				I still remember the day that my uncle Mike came over to give me Final Fantasy VII as a 12th birthday present. It was my favorite game, even though I’d never played it. I’d watched him play it, but was never able to join in. I was able to play games until I lost the ability to use game controllers around the age of 10. For me, gaming was becoming a spectator sport. My uncle once spent an entire afternoon trying to tape little pieces of wood onto his controller to make it work for me.When the efforts were unsuccessful, I told him not to worry about it.Final Fantasy just wasn’t for me. <em class="italics">“Sure it is,”</em> he reassured me as he picked up the modified controller,<em class="italics">““we just need to stop this thing from getting in the way.”</em> I don’t just play. I work to figure out how to play. It’s figuring out how to participate in societal moments.Which is a burden sometimes. I think of it as a metagame that I play in all areas of my life. It’s a puzzle to be solved and shared.
+			</p>
 		</section>
-		
-		<section>
-				<h3>How is gaming shifting from exclusion to inclusion?</h3>
-				<p>
-					There is a natural inclination to use yourself as a shortcut to make assumptions about the people that you’re designing for. And I think that’s especially rampant in the world of game design. Historically, the industry has been incredibly homogenous. Games have been created by people who feel like they are never going to be different from what they are in that moment. Many of them feel like they are the only users who really need to be considered. And that’s changing, which is good. I don’t think it’s a coincidence that the increasing diversity amongst game designers is happening concurrently with the release of more inclusive games. I think those two things go together.
-				</p>
-		<div class="quote">
+
+		<section aria-labelledby="exclusion-5-title">
+			<span id="exclusion-5"></span>
+			<h2 id="exclusion-5-title">How is gaming shifting from exclusion to inclusion?</h2>
+			<p>
+				There is a natural inclination to use yourself as a shortcut to make assumptions about the people that you’re designing for. And I think that’s especially rampant in the world of game design. Historically, the industry has been incredibly homogenous. Games have been created by people who feel like they are never going to be different from what they are in that moment. Many of them feel like they are the only users who really need to be considered. And that’s changing, which is good. I don’t think it’s a coincidence that the increasing diversity amongst game designers is happening concurrently with the release of more inclusive games. I think those two things go together.
+			</p>
+
+			<figure class="quote">
 				<blockquote cite="https://www.amazon.com/dp/0262539489/">
 					<p>
 						“I don’t think it’s a coincidence that the increasing diversity amongst game designers is happening concurrently with the release of more inclusive games. I think those two things go together.”
 					</p>
 				</blockquote>
-				<p>—John R. Porter, <cite>Mismatch: How Inclusion Shapes Design</cite></p>
-		</div>
+				<figcaption class="quote-source">
+					—John R. Porter, <cite>Mismatch: How Inclusion Shapes Design</cite>
+				</figcaption>
+			</figure>
 		</section>
+
 		
-		<footer class="page-footer">
-				<p>Created by Zarah Yaqub for Typography & Interaction Design, Fall 2024</p>
-		</footer>
+	<footer>
+		<p>Zarah Yaqub</p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+			<mask id="mask0_259_32" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="33" height="33">
+			  <rect width="33" height="33" fill="#D9D9D9"/>
+			</mask>
+			<g mask="url(#mask0_259_32)">
+			  <path d="M11 30.2498C9.09792 30.2498 7.47656 29.5794 6.13594 28.2388C4.79531 26.8982 4.125 25.2768 4.125 23.3748C4.125 21.4727 4.79531 19.8513 6.13594 18.5107C7.47656 17.1701 9.09792 16.4998 11 16.4998V19.2498C9.85417 19.2498 8.88021 19.6508 8.07812 20.4529C7.27604 21.255 6.875 22.2289 6.875 23.3748C6.875 24.5206 7.27604 25.4945 8.07812 26.2966C8.88021 27.0987 9.85417 27.4998 11 27.4998C12.1458 27.4998 13.1198 27.0987 13.9219 26.2966C14.724 25.4945 15.125 24.5206 15.125 23.3748H17.875C17.875 25.2768 17.2047 26.8982 15.8641 28.2388C14.5234 29.5794 12.9021 30.2498 11 30.2498ZM23.375 28.8748V21.9998H15.125C14.1167 21.9998 13.3375 21.5701 12.7875 20.7107C12.2375 19.8513 12.1688 18.9518 12.5813 18.0123L15.125 12.3748H11.9969L11.1719 14.506L8.525 13.7498L9.4875 11.2748C9.69375 10.7477 10.0318 10.3409 10.5016 10.0544C10.9714 9.76799 11.4812 9.62476 12.0312 9.62476H19.1812C20.2125 9.62476 20.9974 10.043 21.5359 10.8794C22.0745 11.7159 22.1375 12.6039 21.725 13.5435L19.4563 18.5623H23.375C24.1313 18.5623 24.7786 18.8315 25.3172 19.3701C25.8557 19.9086 26.125 20.556 26.125 21.3123V28.8748H23.375ZM22 8.93726C21.2437 8.93726 20.5964 8.66799 20.0578 8.12944C19.5193 7.5909 19.25 6.94351 19.25 6.18726C19.25 5.43101 19.5193 4.78361 20.0578 4.24507C20.5964 3.70653 21.2437 3.43726 22 3.43726C22.7563 3.43726 23.4036 3.70653 23.9422 4.24507C24.4807 4.78361 24.75 5.43101 24.75 6.18726C24.75 6.94351 24.4807 7.5909 23.9422 8.12944C23.4036 8.66799 22.7563 8.93726 22 8.93726Z" fill="#1C1B1F"/>
+			</g>
+		  </svg>
+		<p>Binding</p>
+	</footer>
 	</main>
-	</div>
-
-	<!-- RIGHT COLUMN (GIF) -->
-	<div class="media">
-		<img src="gif.gif" alt="">
-	</div>
-
-</div>
 </body>
+
 </html>
