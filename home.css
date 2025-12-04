@@ -1,7 +1,7 @@
+
 h1 {
     color: var(--white);
     leading-trim: both;
-    text-edge: cap;
     font-family: var(--font-Aktiv-Grotesk-Cd);
     font-size: 3.5rem;
     font-style: normal;
@@ -10,25 +10,24 @@ h1 {
     text-transform: uppercase;
     padding-top: 12rem;
     padding-bottom: 12rem;
-    
-    .design {
-        vertical-align: middle;
-        display: inline-block;
-    }
+
+}
+
+h1 .design {
+    vertical-align: middle;
+    display: inline-block;
 }
 
 h2 {
     color: var(--white);
-    font-family: "Aktiv Grotesk Cd";
-    color: var(--white);
-    leading-trim: both;
-    text-edge: cap;
     font-family: "Aktiv Grotesk Cd";
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: 4rem; 
     text-transform: uppercase;
+    background-color: none;
+    position: relative;
 }
 
 h3 {
@@ -36,43 +35,12 @@ h3 {
     margin-top: 0;
     margin-bottom: 0;
     color: var(--black);
-    leading-trim: both;
-    text-edge: cap;
     font-family: "Aktiv Grotesk Cd";
     font-size: 2.25rem;
     font-style: normal;
     font-weight: 800;
     line-height: 2rem; 
     text-transform: uppercase;
-}
-
-svg {
-    vertical-align: middle;
-
-}
-
-footer {
-    display: flex;
-    padding: 1rem 2rem;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 1.25rem 1.25rem 0 0;
-    background: var(--white);
-    margin: -1rem;
-    color: var(--black);
-    leading-trim: both;
-    text-edge: cap;
-    font-family: var(--font-Aktiv-Grotesk-Cd);
-    font-size: var(--text-s);
-    font-style: normal;
-    font-weight: 700;
-    text-transform: uppercase;
-    .p{
-        margin-bottom: 0;
-    }
-}
-.binding-image{
-border-radius: 1rem;
 }
 
 .thin-heading {
@@ -98,14 +66,38 @@ border-radius: 1rem;
     line-height: 2.4375rem;
     text-transform: uppercase;
 }
- 
+
+.author {
+color: var(--black);
+
+font-family: var(--font-Aktiv-Grotesk-Cd);
+font-size: 1rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+}
+
+svg {
+    vertical-align: middle;
+}
+.introduction {
+    img {
+        overflow: hidden;
+        border-radius: 2rem;
+        margin-top: 3rem;
+    }
+}
+
+
+/* --- Article Card Styles --- */
+
 .article {
     color: var(--black);
     border-radius: 1rem;
+    /* Full bleed for smaller screens */
     margin-left: -1rem;
-    margin-right:-1rem;
-    margin-left: -1rem;
-    width:auto;
+    margin-right: -1rem; 
 }
 
 .article-1 {
@@ -120,17 +112,24 @@ border-radius: 1rem;
     background-color: var(--horror);
 }
 
-.tag {
+.article .card-content {
+    /* Add padding to the content inside the card for mobile */
+    padding: 1rem; 
     display: flex;
     flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.tag {
+    display: flex;
+    flex-direction: column; /* This seems intentional for layout, otherwise column is odd for a single tag */
     justify-content: space-between;
     align-items: flex-start;
-
     width: max-content;
     border-radius: 2rem;
     border: 1px solid var(--black);
     padding: .5rem 1rem;
-
     color: #000;
     font-family: var(--font-Aktiv-Grotesk-Cd);
     font-size: var(--text-xs);
@@ -140,7 +139,7 @@ border-radius: 1rem;
     text-transform: uppercase;
 }
 
-.datetime {
+time { /* Target the time element directly */
     color: var(--black);
     font-family: var(--font-helvetica);
     font-size: var(--text-xs);
@@ -150,49 +149,162 @@ border-radius: 1rem;
     text-transform: uppercase;
 }
 
+.colophon {
+    display: flex;
+    margin-top: 4rem;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
 .read-more {
     border-radius: 1rem;
     background-color: var(--white);
     display: flex;
     padding: 1rem;
     justify-content: space-between;
+    align-items: center; /* Changed from flex-start to center for vertical alignment */
+    align-self: stretch;
+    border: none; /* Make it look like a button */
+    cursor: pointer;
+}
+
+/* Fix: Moved out of .read-more block */
+.read-more p { 
+    color: var(--black);
+    font-family: var(--font-Aktiv-Grotesk-Cd);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem; 
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.cards {
+    display: flex;
+    width: 22rem;
+    height: 73rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin-top: 8rem;
+    /* This class is on the <article> parent, but the cards layout is on the <article class="cards"> 
+/* The .content container is currently empty */
+}
+.card-content { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: flex-start;
     align-self: stretch;
-
-    p {
-color: var(--black);
-font-family: var(--font-Aktiv-Grotesk-Cd);
-font-size: 1.25rem;
-font-style: normal;
-font-weight: 700;
-line-height: 3rem; 
-text-transform: uppercase;
-margin-bottom: 0;
-    }
-
+    gap: 1.25rem;
+    /* Add content styling here if needed (e.g., max-width, padding) */
 }
 
-.card{
-    display: flex;
-}
-.content { 
+/*                                                                                                              REPONSIVE */
 
-}
-
-
-@media (width > 750px) {
-
-
-
-   .cards {
-        display: flex;
-        flex-direction: row ;
-        max-width: 10vw;
-        gap:calc(100%);
-    }
-
-
-}
-
+@media (min-width: 992px) {
 
     
+    h1 {
+        margin-top: -8rem;
+        font-size: 18rem;
+        text-align: center;
+        margin-left: 4rem;
+    }
+    
+    .thin-heading {
+        font-size: 18rem;
+    }
+    /* Fix: Moved out of h1 block */
+    h1 .design {
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    h1 svg{
+width: 18rem;
+height: 18rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 20rem 20rem 20rem ;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 50px;
+        height: auto;
+        margin-top: -10rem;
+        margin-top: 100px;
+    }
+
+    .cards h2{ 
+        margin-bottom: -4rem;
+    }
+    .article-1 {
+        grid-column: 1;
+        height: 30rem;
+
+    }
+
+    .article-2 {
+        grid-column: 2;
+        /* margin-right: 1rem;
+        margin-left: 1rem; */
+        height: 30rem;
+    }
+
+    .article-3 {
+        grid-column: 3;
+        height: 30rem;
+    }
+
+    .introduction {
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 50px;
+        grid-template-rows: 1fr;
+        grid-template-columns: 50rem 30rem;
+    }
+
+    .introduction h2, .introduction p {
+        grid-column: 1;
+        grid-row: 1;
+        position: relative;
+    }
+
+    .introduction img {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .introduction h2 {
+        height: 2rem;
+        background-color: none;
+    }
+
+    .introduction p {
+        margin-top: 8rem;
+    }
+.colophon {
+     display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 50px;
+    grid-template-rows: 2fr; 
+    grid-template-columns: 30rem 50rem;
+}
+
+.colophon h2, .colophon p {
+    grid-column: 1 / -1;
+}
+    }
+

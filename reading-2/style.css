@@ -1,3 +1,9 @@
-.reading-progress-bar {
-    background: var(--purple);
+
+.selected {
+	color: var(--neutral);
+}
+
+h2 {
+	background-color: var(--neutral);
+	color: var(--black);
 }

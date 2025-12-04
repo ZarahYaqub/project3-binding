@@ -11,7 +11,11 @@ This website was created as part of Project 3 for Type & Interaction
 
 
 ## Learnings
-- <section aria-labelledby="">
+- ARIA  
+<section aria-labelledby=""> 
+https://www.w3schools.com/accessibility/accessibility_labels.php
+aria labels are used to assist screen readers when you do'nt have a good semantic HTML label. 
+
 - <figure>
 - </figcaption>
 

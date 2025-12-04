@@ -1,0 +1,9 @@
+.selected {
+	color: var(--mismatch);
+}
+
+
+h2 {
+	background-color: var(--mismatch);
+	color: var(--black);
+}
