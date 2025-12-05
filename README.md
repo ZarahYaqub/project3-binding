@@ -59,7 +59,7 @@ License info: https://openfontlicense.org
 
 To everyone who supported me through this project:
 
-# UC Tutors
+### UC Tutors
 
 Hoseok Choi
 
@@ -67,11 +67,11 @@ Viyan Poonamallee
 
 Johnny Wang
 
-# CD Tutors
+### CD Tutors
 
 Ketana Anekar
 
-# Peers
+### Peers
 
 Bilal Sajid
 
