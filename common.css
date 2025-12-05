@@ -1,3 +1,6 @@
+@import url("https://use.typekit.net/fdv3nhh.css");
+
+
 :root {
 	/* COLORS */
 	--black: #333333;
@@ -71,6 +74,7 @@ html {
 	color: var(--white);
 	scroll-behavior: smooth;
 	text-wrap: pretty;
+	font-size: 125%;
 }
 
 body {
@@ -79,9 +83,9 @@ body {
 	line-height: var(--leading-normal);
 	padding: var(--space-4);
 	text-align: left;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* align-items: flex-start; */
 }
 
 .content p {
@@ -148,6 +152,11 @@ h3 {
 	text-transform: uppercase;
 }
 
+p {
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+}
+
 a {
 	text-decoration: none;
 }
@@ -168,9 +177,9 @@ a {
 
 
 /* LAYOUT / SECTIONS */
-.introduction {
+/* .introduction {
 	margin-top: 5rem;
-}
+} */
 
 article {
 	section {
@@ -218,11 +227,9 @@ header time {
 	background-color: var(--white);
 	color: var(--black);
 	display: flex;
-	width: 23.4375rem;
 	padding: 2rem 1rem 1rem 1rem;
 	flex-direction: column;
 	align-items: flex-start;
-	gap: 0.4375rem;
 	border-radius: 0 0 1.25rem 1.25rem;
 }
 
@@ -324,8 +331,8 @@ footer {
 	.main-nav {
 		font-size: var(--text-2xl);
 	}
-	body {
-		font-size: var(--text-xl)
+	p {
+		font-size: 2rem;
 	}
 
 	.toc-container {
@@ -343,23 +350,25 @@ footer {
 		flex-direction: row-reverse;
 	}
 
-	.content {
+	/* .content {
 		max-inline-size: 70%;
 		padding: 4rem;
-	}
+	} */
 
 	.content section h2 {
-		margin-top: 4rem;
-		margin-bottom: 2rem;
-		padding-bottom: -5rem;
+		/* margin-top: 4rem;
+		margin-bottom: 2rem; */
+		/* padding-bottom: -5rem; */
 		border-radius: 1.25rem;
 		padding-left: 3rem;
 	}
 	.hero-section {
 		display: flex;
 		flex-direction: row;
-		height: 100vh;
-		align-items: stretch;
+		gap: 1rem;
+		/* flex-direction: row; */
+		/* height: 100vh;
+		align-items: stretch; */
 	}
 	
 	.hero-section figure {
@@ -380,7 +389,7 @@ footer {
 	
 	.hero-section header {
 		padding-top: 2rem;
-		height: 100%;
+		/* height: 100%; */
 		width: 50%;
 		position: relative;
 		box-sizing: border-box;

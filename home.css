@@ -1,14 +1,14 @@
 h1 {
     color: var(--white);
-    leading-trim: both;
+    /* leading-trim: both; */
     font-family: var(--font-Aktiv-Grotesk-Cd);
-    font-size: 3.5rem;
+    font-size: 10rem;
     font-style: normal;
     font-weight: 800;
     line-height: 90%;
     text-transform: uppercase;
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    /* padding-top: 12rem;
+    padding-bottom: 12rem; */
 
 }
 
@@ -45,7 +45,6 @@ h3 {
 .thin-heading {
     color: var(--white);
     font-family: "Aktiv Grotesk Cd";
-    font-size: 3.5rem;
     font-style: normal;
     font-weight: 300;
     line-height: 90%;
@@ -60,6 +59,12 @@ h3 {
     font-weight: 300;
     line-height: 2.4375rem;
     text-transform: uppercase;
+}
+
+.home {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .author {
@@ -81,13 +86,20 @@ svg {
         overflow: hidden;
         border-radius: 2rem;
         margin-top: 3rem;
+        max-width: 50vw;
     }
 }
 
-.content {
+/* .content {
     padding-left: 2rem;
     padding-right: 2rem;
-}
+    text-align: center;
+} */
+    /* align-items: center; */
+    /* justify-content: center;
+    max-width: 40vw;
+    padding-block-end: 1rem;
+} */
 
 
 /* --- Article Card Styles --- */
@@ -206,21 +218,21 @@ time { /* Target the time element directly */
 
 @media (min-width: 992px) {
     
-    h1 {
+    /* h1 {
         margin-top: -8rem;
         font-size: 18rem;
         text-align: center;
         margin-left: 4rem;
-    }
+    } */
     
-    .thin-heading {
+    /* .thin-heading {
         font-size: 18rem;
-    }
-    /* Fix: Moved out of h1 block */
+    } */
+    /* Fix: Moved out of h1 block
     h1 .design {
         vertical-align: middle;
         display: inline-block;
-    }
+    } */
 
     h1 svg{
 width: 18rem;
@@ -259,15 +271,10 @@ height: 18rem;
     }
 
     .introduction {
-        display: grid;
-        margin-left: auto;
-        margin-right: auto;
-        gap: 50px;
-        grid-template-rows: 1fr;
-        grid-template-columns: 50rem 30rem;
+    \
     }
 
-    .introduction h2, .introduction p {
+    /* .introduction h2, .introduction p {
         grid-column: 1;
         grid-row: 1;
         position: relative;
@@ -283,8 +290,9 @@ height: 18rem;
         background-color: none;
     }
 
+
     .introduction p {
         margin-top: 5rem;
-    }
+    } */
 }
 
