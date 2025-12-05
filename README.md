@@ -1,12 +1,11 @@
-📚 Project 3: Binding
-
+# Project 3: Binding
 By Zarah Yaqub
 
 ## About the Project
 
 This website was created as part of Project 3 for the course Type & Interaction at Parsons School of Design.
 
-Designed as a digital “book,” this website curates three readings focused on accessibility, inclusion, and the politics of design. The goal is to help designers understand how design decisions shape who gets included — and excluded — in digital and visual environments.
+Designed as a digital “book,” this website curates three readings focused on accessibility, inclusion, and the politics of design. The goal is to help designers understand how design decisions shape who gets included and excluded in digital and visual environments.
 
 The site demonstrates:
 
