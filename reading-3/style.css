@@ -3,6 +3,19 @@
 }
 
 h2 {
-	background-color: var(--nuetral);
+	background-color: var(--horror);
 	color: var(--black);
+}
+
+.quote {
+	background-color: var(--horror);
+}
+
+header{
+	background: var(--horror);
+}
+
+
+.content a:hover {
+	background-color: var(--horror);
 }

@@ -10,6 +10,7 @@
 		@import '../common.css' layer(common);
 		@import 'style.css' layer(page);
 	</style>
+
 	<link rel="stylesheet" href="https://use.typekit.net/fdv3nhh.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +18,7 @@
 </head>
 
 <body>
-	<nav aria-label="Main Navigation" class="main-nav">
+	<nav class="main-nav">
 		<span><a href="../index.html">home</a></span>
 		<span class="selected"><a href="../reading-1/">Mismatch</a></span>
 		<span><a href="../reading-2/">Neutral</a></span>
@@ -25,19 +26,20 @@
 	</nav>
 
 	<main>
-		<section>
-			<img src="../media/binding-image.jpg"
-				alt="Four illustrated hands in pink, yellow, blue, and purple stretch a red string between them, creating a heart shape in the center">
-		</section>
+		<div class="hero-section">
+			<figure>
+				<img src="../media/binding-image.jpg"
+					alt="Four illustrated hands in pink, yellow, blue, and purple stretch a red string between them, creating a heart shape in the center">
+			</figure>
+			<header>
+				<p><time datetime="2018-09-21">September 21, 2018</time></p>
+				<h1>Mismatch: How <span class="light-text">Inclusion</span> Shapes Design</h1>
+				<p class="author">By Kat Holmes</p>
+			</header>
+		</div>
 
-
-		<header>
-			<p><time datetime="2018-09-21">September 21, 2018</time></p>
-			<h1>Mismatch: How <span class="light-text">Inclusion</span> Shapes Design</h1>
-			<p class="author">By Kat Holmes</p>
-		</header>
-
-		<nav aria-labelledby="toc-heading" class="toc-container">
+		<div class="two-column">
+		<nav class="toc-container">
 			<h3 id="toc-heading" class="toc-title">ON THIS PAGE</h3>
 
 			<ol class="toc-list">
@@ -51,7 +53,7 @@
 		</nav>
 
 		<article class="content">
-			<section id="introduction" aria-label="Introduction">
+			<section id="introduction">
 				<a href="https://www.jrp3.com/index.php">John R. Porter</a>’s bedroom would make any die-hard gamer feel
 				right at home. Among the personal computers, beyond the Run Lola Run movie poster, across from a MakerBot
 				busily extruding plastic threads into an unidentifiable widget, is a large black pegboard. The kind of board
@@ -75,7 +77,7 @@
 					class="italics">Who makes it?</em>
 			</section>
 			
-			<section aria-labelledby="exclusion-1-title">
+			<section>
 				<h2 id="exclusion-1-title">Why did you build a Wall of Exclusion?</h2>
 				<span id="exclusion-1"></span>
 			
@@ -97,7 +99,7 @@
 				</figcaption>
 			</figure>
 			
-			<section aria-labelledby="exclusion-2-title">
+			<section>
 				<span id="exclusion-2"></span>
 				<h2 id="exclusion-2-title">What happens when designers make assumptions about people?</h2>
 				<p>
@@ -112,7 +114,7 @@
 				</p>
 			</section>
 			
-			<section aria-labelledby="exclusion-3-title">
+			<section>
 				<span id="exclusion-3"></span>
 				<h2 id="exclusion-3-title">How does a designer make something inclusive?</h2>
 				<p>
@@ -128,7 +130,7 @@
 				</p>
 			</section>
 			
-			<section aria-labelledby="exclusion-4-title">
+			<section>
 				<span id="exclusion-4"></span>
 				<h2 id="exclusion-4-title">What’s the role of gaming in your life?</h2>
 				<p>
@@ -138,7 +140,7 @@
 					the age of 10. For me, gaming was becoming a spectator sport. My uncle once spent an entire afternoon
 					trying to tape little pieces of wood onto his controller to make it work for me.When the efforts were
 					unsuccessful, I told him not to worry about it.Final Fantasy just wasn’t for me. <em class="italics">“Sure it
-						is,”</em> he reassured me as he picked up the modified controller,<em class="italics">““we just need to stop
+						is,”</em> he reassured me as he picked up the modified controller,<em class="italics">“we just need to stop
 						this thing from getting in the way.”</em> I don’t just play.
 					I work to figure out how to play. It’s figuring out how to participate in societal moments.Which is a
 					burden sometimes. I think of it as a metagame that I play in all areas of my life. It’s a puzzle to be
@@ -146,7 +148,7 @@
 				</p>
 			</section>
 			
-			<section aria-labelledby="exclusion-5-title">
+			<section>
 				<span id="exclusion-5"></span>
 				<h2 id="exclusion-5-title">How is gaming shifting from exclusion to inclusion?</h2>
 				<p>
@@ -173,6 +175,7 @@
 				</figure>
 			</section>
 		</article>
+		</div>
 
 
 		<footer>

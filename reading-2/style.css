@@ -7,3 +7,16 @@ h2 {
 	background-color: var(--neutral);
 	color: var(--black);
 }
+
+.quote {
+	background-color: var(--neutral);
+}
+
+header{
+	background: var(--neutral);
+}
+
+
+.content a:hover {
+	background-color: var(--neutral);
+}

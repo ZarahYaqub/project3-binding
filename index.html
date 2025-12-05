@@ -20,7 +20,7 @@
 </head>
 
 <body>
-		<h1>
+		<header class="home">
 			<p>Access <em class="thin-heading">by</p></em>
 			<p class="design">Design</p>
 			<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 192 192" fill="none">
@@ -31,7 +31,7 @@
 				  <path d="M64 176C52.9333 176 43.5 172.1 35.7 164.3C27.9 156.5 24 147.067 24 136C24 124.933 27.9 115.5 35.7 107.7C43.5 99.9 52.9333 96 64 96V112C57.3333 112 51.6667 114.333 47 119C42.3333 123.667 40 129.333 40 136C40 142.667 42.3333 148.333 47 153C51.6667 157.667 57.3333 160 64 160C70.6667 160 76.3333 157.667 81 153C85.6667 148.333 88 142.667 88 136H104C104 147.067 100.1 156.5 92.3 164.3C84.5 172.1 75.0667 176 64 176ZM136 168V128H88C82.1333 128 77.6 125.5 74.4 120.5C71.2 115.5 70.8 110.267 73.2 104.8L88 72H69.8L65 84.4L49.6 80L55.2 65.6C56.4 62.5333 58.3667 60.1667 61.1 58.5C63.8333 56.8333 66.8 56 70 56H111.6C117.6 56 122.167 58.4333 125.3 63.3C128.433 68.1667 128.8 73.3333 126.4 78.8L113.2 108H136C140.4 108 144.167 109.567 147.3 112.7C150.433 115.833 152 119.6 152 124V168H136ZM128 52C123.6 52 119.833 50.4333 116.7 47.3C113.567 44.1667 112 40.4 112 36C112 31.6 113.567 27.8333 116.7 24.7C119.833 21.5667 123.6 20 128 20C132.4 20 136.167 21.5667 139.3 24.7C142.433 27.8333 144 31.6 144 36C144 40.4 142.433 44.1667 139.3 47.3C136.167 50.4333 132.4 52 128 52Z" fill="#FAFAFA"/>
 				</g>
 			  </svg>
-		</h1>
+		</header>
 
 	<section class="introduction">
 		<h2>
@@ -44,60 +44,59 @@
 		<img src="./media/binding-image.jpg" alt="">
 	</section>
 	
-
-	<article class="cards">
+	<section class="card-container">
 		<h2>
 			readings
 		</h2>
-		<section class="article article-1">
-			<div class="card-content">
-				<div class="tag">
-					<p>MISMATCH</p>
-				</div>
-				<p><time datetime="2018-09-21">September 21, 2018</time></p>
-				<h3>Mismatch: How <em class="light-text">Inclusion</em> Shapes Design</h3>
-				<p class="author">By Kat Holmes</p>
-				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod empor incididunt ut labore et dolore magna aliqua</p> -->
-				<button class="read-more">
+		<article class="cards">
+			<section class="article article-1">
+				<div class="card-content">
+					<div class="tag">
+						<p>MISMATCH</p>
+					</div>
+					<p><time datetime="2018-09-21">September 21, 2018</time></p>
+					<h3>Mismatch: How <em class="light-text">Inclusion</em> Shapes Design</h3>
+					<p class="author">By Kat Holmes</p>
 					<a href="../reading-1/">
-						<p>Read More →</p>
+						<button class="read-more">
+							<p>Read More →</p>
+						</button>
 					</a>
-				</button>
-			</div>
-		</section>
-		<section class="article article-2">
-			<div class="card-content">
-				<p class="tag">NEUTRAL</p>
-				<p><time datetime="2021-05-24">May 24, 2021</time></p>
-				</p>
-				<h3>There Is No Such Thing As <em class="light-text">Neutral</em> Graphic Design</h3>
-				<p class="author">By Ellen Lupton and Leslie Xia</p>
-				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod empor incididunt ut labore et dolore magna aliqua</p> -->
-				<button class="read-more">
+				</div>
+			</section>
+			<section class="article article-2">
+				<div class="card-content">
+					<p class="tag">NEUTRAL</p>
+					<p><time datetime="2021-05-24">May 24, 2021</time></p>
+					</p>
+					<h3>There Is No Such Thing As <em class="light-text">Neutral</em> Graphic Design</h3>
+					<p class="author">By Ellen Lupton and Leslie Xia</p>
+					<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod empor incididunt ut labore et dolore magna aliqua</p> -->
 					<a href="../reading-2/">
-						<p>Read More →</p>
-					</a>
-				</button>
-			</div>
-		</section>
-		<section class="article article-3">
-			<div class="card-content">
-				<p class="tag">HORROR</p>
-				<p>
-					<time datetime="2018-09-21">September 21, 2018</time>
-				</p>
-				<h3>I Wrote the book on <em class="light-text">user&#8209;friendly design,</em> What I see today <em
-						class="light-text">horrifies</em> me</h3>
-				<p class="author">By Don Norman</p>
-				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod empor incididunt ut labore et dolore magna aliqua</p> -->
-				<button class="read-more">
-					<a href="../binding-2/reading-3/">
-						<p>Read More →</p>
-					</a>
-				</button>
-			</div>
-		</section>
-	</article>
+					<button class="read-more">
+							<p>Read More →</p>
+					</button>
+				</a>
+				</div>
+			</section>
+			<section class="article article-3">
+				<div class="card-content">
+					<p class="tag">HORROR</p>
+					<p>
+						<time datetime="2018-09-21">September 21, 2018</time>
+					</p>
+					<h3>I Wrote the book on <em class="light-text">user&#8209;friendly design,</em> What I see today <em
+							class="light-text">horrifies</em> me</h3>
+					<p class="author">By Don Norman</p>
+					<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod empor incididunt ut labore et dolore magna aliqua</p> -->
+					<a href="../reading-3/">
+						<button class="read-more">
+								<p>Read More →</p>
+						</button>
+				</div>
+			</section>
+		</article>
+	</section>
 
 
 	<section class="colophon">
@@ -120,7 +119,6 @@
 			</g>
 		  </svg>
 		<p>Binding</p>
-
 	</footer>
 </body>
 
