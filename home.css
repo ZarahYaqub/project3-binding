@@ -1,0 +1,290 @@
+h1 {
+    color: var(--white);
+    leading-trim: both;
+    font-family: var(--font-Aktiv-Grotesk-Cd);
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 90%;
+    text-transform: uppercase;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+
+}
+
+h1 .design {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+h2 {
+    color: var(--white);
+    font-family: "Aktiv Grotesk Cd";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem; 
+    text-transform: uppercase;
+    background-color: none;
+    position: relative;
+}
+
+h3 {
+    background-color: transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--black);
+    font-family: "Aktiv Grotesk Cd";
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 2rem; 
+    text-transform: uppercase;
+}
+
+.thin-heading {
+    color: var(--white);
+    font-family: "Aktiv Grotesk Cd";
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 90%;
+    text-transform: uppercase;
+}
+
+.light-text {
+    color: var(--black);
+    font-family: "Aktiv Grotesk Cd";
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2.4375rem;
+    text-transform: uppercase;
+}
+
+.author {
+color: var(--black);
+
+font-family: var(--font-Aktiv-Grotesk-Cd);
+font-size: 1rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+}
+
+svg {
+    vertical-align: middle;
+}
+.introduction {
+    img {
+        overflow: hidden;
+        border-radius: 2rem;
+        margin-top: 3rem;
+    }
+}
+
+.content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+/* --- Article Card Styles --- */
+
+.article {
+    color: var(--black);
+    border-radius: 1rem;
+    /* Full bleed for smaller screens */
+    margin-left: -1rem;
+    margin-right: -1rem; 
+}
+
+.article-1 {
+    background-color: var(--mismatch);
+}
+
+.article-2 {
+    background-color: var(--neutral);
+}
+
+.article-3 {
+    background-color: var(--horror);
+}
+
+.article .card-content {
+    /* Add padding to the content inside the card for mobile */
+    padding: 1rem; 
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.tag {
+    display: flex;
+    flex-direction: column; /* This seems intentional for layout, otherwise column is odd for a single tag */
+    justify-content: space-between;
+    align-items: flex-start;
+    width: max-content;
+    border-radius: 2rem;
+    border: 1px solid var(--black);
+    padding: .5rem 1rem;
+    color: #000;
+    font-family: var(--font-Aktiv-Grotesk-Cd);
+    font-size: var(--text-xs);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+time { /* Target the time element directly */
+    color: var(--black);
+    font-family: var(--font-helvetica);
+    font-size: var(--text-xs);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.colophon {
+    display: flex;
+    margin-top: 4rem;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.read-more {
+    border-radius: 1rem;
+    background-color: var(--white);
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center; /* Changed from flex-start to center for vertical alignment */
+    align-self: stretch;
+    border: none; /* Make it look like a button */
+    cursor: pointer;
+}
+
+/* Fix: Moved out of .read-more block */
+.read-more p { 
+    color: var(--black);
+    font-family: var(--font-Aktiv-Grotesk-Cd);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem; 
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.cards {
+    display: flex;
+    width: 22rem;
+    height: 73rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin-top: 8rem;
+    /* This class is on the <article> parent, but the cards layout is on the <article class="cards"> 
+/* The .content container is currently empty */
+}
+.card-content { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 1.25rem;
+    /* Add content styling here if needed (e.g., max-width, padding) */
+}
+
+
+@media (min-width: 992px) {
+    
+    h1 {
+        margin-top: -8rem;
+        font-size: 18rem;
+        text-align: center;
+        margin-left: 4rem;
+    }
+    
+    .thin-heading {
+        font-size: 18rem;
+    }
+    /* Fix: Moved out of h1 block */
+    h1 .design {
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    h1 svg{
+width: 18rem;
+height: 18rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 20rem 20rem 20rem ;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 50px;
+        height: auto;
+        margin-top: -10rem;
+    }
+
+    .cards h2{ 
+        margin-bottom: -4rem;
+    }
+    .article-1 {
+        grid-column: 1;
+        height: 30rem;
+
+    }
+
+    .article-2 {
+        grid-column: 2;
+        /* margin-right: 1rem;
+        margin-left: 1rem; */
+        height: 30rem;
+    }
+
+    .article-3 {
+        grid-column: 3;
+        height: 30rem;
+    }
+
+    .introduction {
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 50px;
+        grid-template-rows: 1fr;
+        grid-template-columns: 50rem 30rem;
+    }
+
+    .introduction h2, .introduction p {
+        grid-column: 1;
+        grid-row: 1;
+        position: relative;
+    }
+
+    .introduction img {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .introduction h2 {
+        height: 2rem;
+        background-color: none;
+    }
+
+    .introduction p {
+        margin-top: 5rem;
+    }
+}
+

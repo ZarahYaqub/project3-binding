@@ -23,11 +23,6 @@
 	--text-4xl: 2.5rem;
 	--text-5xl: 3rem;
 
-	/* LINE HEIGHTS */
-	--leading-tight: 1.25;
-	--leading-normal: 1.5;
-	--leading-relaxed: 1.75;
-	--leading-loose: 2;
 
 	/* SPACING SCALE  */
 	--space-1: 0.25rem;
@@ -84,16 +79,13 @@ body {
 	line-height: var(--leading-normal);
 	padding: var(--space-4);
 	text-align: left;
-
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 }
 
-p {
-	max-width: 70vw;
-	text-wrap: balance;
-	font-size: 1.5rem;
+.content p {
+	padding: 1rem;
 }
 
 /* NAV */
@@ -210,7 +202,6 @@ header {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	background: var(--mismatch);
 	margin-top: -1rem;
 }
 
@@ -265,7 +256,9 @@ header time {
 	border-radius: var(--border-radius);
 	text-align: center;
 	margin: var(--space-12) auto;
-	max-width: 20rem;
+	max-width: 60vw;
+	display: flex;
+  justify-content: center;
 }
 
 .quote blockquote {
@@ -273,7 +266,7 @@ header time {
 	padding: 0;
 	text-align: center;
 	font-family: "Krub", sans-serif;
-	font-size: 5rem;
+	font-size: var(--text-base);
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
@@ -331,6 +324,9 @@ footer {
 	.main-nav {
 		font-size: var(--text-2xl);
 	}
+	body {
+		font-size: var(--text-xl)
+	}
 
 	.toc-container {
 		height: 100vw;
@@ -359,40 +355,35 @@ footer {
 		border-radius: 1.25rem;
 		padding-left: 3rem;
 	}
-
-	.content p {
-		padding: 1rem;
-	}
-
 	.hero-section {
 		display: flex;
 		flex-direction: row;
 		height: 100vh;
-		/* Set specific height instead of 100% */
+		align-items: stretch;
 	}
-
+	
 	.hero-section figure {
 		width: 50%;
-		height: 100vh;
-		/* Match the header height */
+		height: 100%;
 		margin: 0;
-		/* Remove default figure margin */
 		display: flex;
 		position: relative;
+		overflow: hidden;
 	}
-
+	
 	.hero-section figure img {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		/* Makes image fill the space nicely */
+		display: block; /* Add this to remove inline spacing */
 	}
-
+	
 	.hero-section header {
 		padding-top: 2rem;
-		height: 45.30rem;
+		height: 100%;
 		width: 50%;
 		position: relative;
+		box-sizing: border-box;
 	}
 
 	header .author {
@@ -406,8 +397,143 @@ footer {
 
 }
 
-body {
-	font-size: var(--text-xl)
+
+.card-container {
+	margin-bottom: 3rem;
+}
+
+.cards {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+	width: 100%;
+	margin-top: 2rem;
+}
+
+
+.article {
+	border-radius: 1rem;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+}
+
+.article-1 {
+	background-color: var(--mismatch);
+}
+
+.article-2 {
+	background-color: var(--neutral);
+}
+
+.article-3 {
+	background-color: var(--horror);
+}
+
+.card-content {
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	min-height: 400px;
+	height: 100%;
+}
+
+/* Wrapper for all content except button */
+.card-content > *:not(.read-more):not(a) {
+	flex: 0 0 auto;
+}
+
+/* Push button to bottom and make it full width */
+.card-content > a {
+	margin-top: auto;
+	width: 100%;
+	display: block;
+}
+
+/* ===== TAG ===== */
+
+.tag {
+	display: inline-flex;
+	width: max-content;
+	border-radius: 2rem;
+	border: 1px solid var(--black);
+	padding: 0.5rem 1rem;
+	color: var(--black);
+	font-family: var(--font-Aktiv-Grotesk-Cd);
+	font-size: 0.75rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 0.5rem;
+}
+
+/* ===== TIME/DATE ===== */
+
+time {
+	color: var(--black);
+	font-family: var(--font-helvetica);
+	font-size: 0.875rem;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+/* ===== CARD TYPOGRAPHY ===== */
+
+h3 {
+	color: var(--black);
+	font-family: "Aktiv Grotesk Cd";
+	font-size: 1.75rem;
+	font-weight: 800;
+	line-height: 1.2;
+	text-transform: uppercase;
+	margin: 0 0 1rem 0;
+}
+
+.light-text {
+	color: var(--black);
+	font-family: "Aktiv Grotesk Cd";
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.author {
+	color: var(--black);
+	font-family: var(--font-Aktiv-Grotesk-Cd);
+	font-size: 1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+/* ===== BUTTON ===== */
+
+.read-more {
+	border-radius: 1rem;
+	background-color: var(--white);
+	padding: 1rem;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.read-more:hover {
+	opacity: 0.9;
+	transform: translateY(-2px);
+}
+
+.read-more:active {
+	transform: translateY(0);
+}
+
+.read-more p {
+	color: var(--black);
+	font-family: var(--font-Aktiv-Grotesk-Cd);
+	font-size: 1.25rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0;
+	text-align: center;
 }
 
 footer {
