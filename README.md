@@ -4,23 +4,18 @@ By Zarah Yaqub
 This website was created as part of Project 3 for Type & Interaction 
 
 ## About the Reading
-[link to the Reading 1]() 
-[link to the Reading 2]() 
-[link to the Reading 3]() 
-
-
+[Mismatch How Inclusion Shapes Design](https://mitpress.mit.edu/9780262539487/mismatch/) By Kat Holmes
+[I wrote the book on user-friendly design. What I see today horrifies me](https://www.fastcompany.com/90338379/i-wrote-the-book-on-user-friendly-design-what-i-see-today-horrifies-me) By Don Norman
+[There Is No Such Thing As Neutral Graphic Design](https://eyeondesign.aiga.org/there-is-no-such-thing-as-neutral-graphic-design/) By
+Ellen Lupton and Leslie Xia
 
 ## Learnings
-- ARIA  
-<section aria-labelledby=""> 
-https://www.w3schools.com/accessibility/accessibility_labels.php
-aria labels are used to assist screen readers when you do'nt have a good semantic HTML label. 
-
 - <figure>
 - </figcaption>
 
   
 ## Typography Licence
+
 
 ## Special Thanks
 to everyone who helped me. 
@@ -31,5 +26,8 @@ UC Tutors:
 
 CD Tutors: 
 - Ketana Anekar
+-
+
+
 
 
